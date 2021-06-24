@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TMUrunListesi</class>
+ <widget class="QDialog" name="TMUrunListesi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>573</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,1">
+   <item>
+    <widget class="QGroupBox" name="grpFiltre">
+     <property name="title">
+      <string>Arama</string>
+     </property>
+     <widget class="QGroupBox" name="grpUrunAdi">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>40</y>
+        <width>251</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Ürün Adı</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblUrunAdiFiltre">
+           <property name="text">
+            <string>Değer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leUrunAdiDegeri"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="grpUrunAdiFiltreTr">
+         <property name="title">
+          <string>Filtre Türü</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QRadioButton" name="rbUrunAdiIleBaslayan">
+            <property name="text">
+             <string>İle Başlayan</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbUrunAdiIleBiten">
+            <property name="text">
+             <string>İle Biten</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbUrunAdiIceren">
+            <property name="text">
+             <string>İçeren</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QGroupBox" name="grpUrunAdi_2">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>40</y>
+        <width>251</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Ürün Detayı</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="lblUrunDetayiFiltre">
+           <property name="text">
+            <string>Değer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="leUrunDetayiDegeri"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="grpUrunAdiFiltreTr_2">
+         <property name="title">
+          <string>Filtre Türü</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QRadioButton" name="rbUrunDetayiBaslayan">
+            <property name="text">
+             <string>İle Başlayan</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbUrunDetayiIleBiten">
+            <property name="text">
+             <string>İle Biten</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbUrunDetayiIceren">
+            <property name="text">
+             <string>İçeren</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>60</y>
+        <width>105</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="btnAra">
+         <property name="text">
+          <string>Ara</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="cbYazarkenAra">
+         <property name="text">
+          <string>Yazarken Ara</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QTableWidget" name="tblListe">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>300</y>
+        <width>1031</width>
+        <height>204</height>
+       </rect>
+      </property>
+      <property name="autoScroll">
+       <bool>true</bool>
+      </property>
+      <property name="autoScrollMargin">
+       <number>16</number>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="btnKapat">
+     <property name="text">
+      <string>Kapat</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnKapat</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>561</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>440</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leUrunAdiDegeri</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>186</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>723</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>leUrunDetayiDegeri</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>117</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>722</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunAdiIleBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>76</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>70</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunAdiIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunAdiIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>214</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunDetayiBaslayan</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>223</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>383</x>
+     <y>321</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunDetayiIleBiten</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>466</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>482</x>
+     <y>322</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>rbUrunDetayiIceren</sender>
+   <signal>clicked()</signal>
+   <receiver>TMUrunListesi</receiver>
+   <slot>ara()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>507</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>599</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cbYazarkenAra</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>btnAra</receiver>
+   <slot>setDisabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>694</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>697</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ara()</slot>
+ </slots>
+</ui>

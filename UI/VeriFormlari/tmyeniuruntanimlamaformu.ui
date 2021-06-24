@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TMYeniUrunTanimlamaFormu</class>
+ <widget class="QDialog" name="TMYeniUrunTanimlamaFormu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>828</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0,0" columnstretch="0,0">
+     <property name="verticalSpacing">
+      <number>50</number>
+     </property>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lblUrunFiyati">
+       <property name="text">
+        <string>Ürün Fiyatı</string>
+       </property>
+       <property name="buddy">
+        <cstring>dsbUrunFiyati</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPlainTextEdit" name="pteUrunDetayi"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblUrunDetayi">
+       <property name="text">
+        <string>Ürün Detayı</string>
+       </property>
+       <property name="buddy">
+        <cstring>pteUrunDetayi</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblUrunAdi">
+       <property name="text">
+        <string>Ürün&amp;Adı</string>
+       </property>
+       <property name="buddy">
+        <cstring>leUrunAdi</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lblStokAdeti">
+       <property name="text">
+        <string>Stok Adeti</string>
+       </property>
+       <property name="buddy">
+        <cstring>sbStokAdeti</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="sbStokAdeti">
+       <property name="maximum">
+        <number>100000000</number>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="lbIndirimOrani">
+       <property name="text">
+        <string>İndirim Oranı</string>
+       </property>
+       <property name="buddy">
+        <cstring>dsbIndirimOrani</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QDoubleSpinBox" name="dsbUrunFiyati">
+       <property name="suffix">
+        <string>Tl</string>
+       </property>
+       <property name="minimum">
+        <double>0.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>100000.990000000005239</double>
+       </property>
+       <property name="value">
+        <double>0.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QDoubleSpinBox" name="dsbIndirimOrani">
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="maximum">
+        <double>100000.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QGroupBox" name="grpUrunTuru">
+       <property name="title">
+        <string>Ürün Türü</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QRadioButton" name="rbAnakart">
+            <property name="text">
+             <string>Anakart</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbIslemci">
+            <property name="text">
+             <string>İşlemci</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbRam">
+            <property name="text">
+             <string>Ram</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbHardDisk">
+            <property name="text">
+             <string>HardDisk</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QRadioButton" name="rbKasa">
+            <property name="text">
+             <string>Kasa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbEkranKarti">
+            <property name="text">
+             <string>Ekran Kartı</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbGucKaynagi">
+            <property name="text">
+             <string>Güç Kaynağı</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="rbMonitor">
+            <property name="text">
+             <string>Monitor</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rbFare">
+          <property name="text">
+           <string>Fare</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rbKlavye">
+          <property name="text">
+           <string>Klavye</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="leUrunAdi"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,1,1">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnKaydet">
+       <property name="text">
+        <string>Kaydet</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnIptal">
+       <property name="text">
+        <string>İptal</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>leUrunAdi</tabstop>
+  <tabstop>rbAnakart</tabstop>
+  <tabstop>rbIslemci</tabstop>
+  <tabstop>rbRam</tabstop>
+  <tabstop>rbHardDisk</tabstop>
+  <tabstop>rbKasa</tabstop>
+  <tabstop>rbEkranKarti</tabstop>
+  <tabstop>rbGucKaynagi</tabstop>
+  <tabstop>rbMonitor</tabstop>
+  <tabstop>rbFare</tabstop>
+  <tabstop>rbKlavye</tabstop>
+  <tabstop>pteUrunDetayi</tabstop>
+  <tabstop>dsbUrunFiyati</tabstop>
+  <tabstop>sbStokAdeti</tabstop>
+  <tabstop>dsbIndirimOrani</tabstop>
+  <tabstop>btnKaydet</tabstop>
+  <tabstop>btnIptal</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnKaydet</sender>
+   <signal>clicked()</signal>
+   <receiver>TMYeniUrunTanimlamaFormu</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>414</x>
+     <y>590</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>25</x>
+     <y>592</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnIptal</sender>
+   <signal>clicked()</signal>
+   <receiver>TMYeniUrunTanimlamaFormu</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>629</x>
+     <y>594</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>42</x>
+     <y>596</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
